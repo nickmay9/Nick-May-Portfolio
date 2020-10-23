@@ -125,3 +125,23 @@ header nav ul li a {
 }
 /*end work section*/
 
+/*Contact Section*/
+#contact {
+    margin-top: 30px;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.contact-info ul {
+    width: 500px;
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+
