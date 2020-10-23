@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./images/background-img.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*header section*/
+header {
+    background-image: url(./images/background-img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+}
+
+header h1{
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+}
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav {
+    margin: 5px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+/*end header*/
+
+/*Hero Section*/
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.hero-img img {
+    height: 300px;
+    width: 200px;
+}
+
+
+/*End Hero*/
+
+/*About Me*/
+#about-me {
+    margin-top: 30px;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.title {
+    margin: 10px 10px;
+    padding: 0 10px 0 0;
+    border-right: medium solid black;
+}
+
+.title h2 {
+    text-align: right;
+    font-size: 40px;
+}
+
+.aboutMe-content {
+    width: 70%;
+}
