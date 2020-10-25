@@ -6,17 +6,12 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(./images/background-img.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: lightsteelblue;
 }
 
 /*header section*/
 header {
-    background-image: url(./images/background-img.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: lightslategray;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -50,52 +45,59 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
 }
+
+header nav ul li a:hover {
+    background: white;
+    color: blue;
+    border-radius: 15px;
+    text-shadow: none;
+}
 /*end header*/
 
 /*Hero Section*/
 .hero {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+    background-image: url(./images/GPTempDownload.jpeg);
+    background-size: cover;
+    padding: 20%;
+    /*background-attachment: fixed;*/
+    background-position: center;
 }
 
-.hero-img img {
-    height: 300px;
-    width: 200px;
+.hero h1 {
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: bolder;
+    text-shadow: 2px 2px black;
+    text-align: right;
+    color: black;
 }
-
-
 /*End Hero*/
 
 /*About Me*/
 #about-me {
     margin-top: 30px;
-    margin-left: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
 .title {
-    margin: 10px 10px;
-    padding: 0 10px 0 0;
+    width: 25%;
+    text-align: right;
+    font-size: 40px;
+    padding-right: 15px;
+    margin-right: 15px;
     border-right: medium solid black;
 }
 
-.title h2 {
-    text-align: right;
-    font-size: 40px;
-}
-
 .aboutMe-content {
-    width: 70%;
+    width: 60%;
 }
 /*end about me*/
 
 /*Work Section*/
 #work {
     margin-top: 30px;
-    margin-left: 50px;  
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -103,32 +105,61 @@ header nav ul li a {
 
 .work-example {
     display: grid;
-    grid-template-columns: 8fr 4fr;
-    grid-template-rows: repeat(3, 4fr);
-    width: 70%;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+    width: 60%;
 }
 
 .run-buddy {
-    grid-row: 1/3;
-    grid-column: 1/2;
-    background-image: url(./images/Image\ 10-23-20\ at\ 10.24\ AM.jpeg);
-    background-size: cover;
-    background-attachment: fixed;
+    grid-column: 1/6;
+    grid-row: 1/6;
 }
 
 .horiseon {
-    grid-row: 1;
-    grid-column: 2/-1;
-    background-image: url(./images/screencapture-nickmay9-github-io-Horiseon-Challenge1-2020-10-16-09_05_33.png);
-    background-size: cover;
-    background-attachment: fixed;
+    grid-column: 6/-1;
+    grid-row: 1/4;
 }
+
+.item-3 {
+    grid-column: 6/-1;
+    grid-row: 4/7;
+}
+
+.item-4 {
+    grid-column: 1/4;
+    grid-row: 6/-1;
+}
+
+.item-5 {
+    grid-column: 4/6;
+    grid-row: 6/-1;
+}
+
+.work-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work-img:hover {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.work-text {
+    position: absolute;
+    background-color: salmon;
+    padding: 20px;
+    margin: 5px;
+    z-index: 1;
+}
+
 /*end work section*/
 
 /*Contact Section*/
 #contact {
-    margin-top: 30px;
-    margin-left: 50px;
+    margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -144,4 +175,28 @@ header nav ul li a {
     margin-top: 50px;
 }
 
+.contact-info ul li a {
+    color: black;
+}
+
+.contact-info ul li a:hover {
+    color: blue;
+}
+
+@media screen and (max-width: 1024px) {
+    #about-me, #work, #contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+    .title {
+        width: 50%;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 10px;
+        border-right: none;
+        border-bottom: medium solid black;
+    }
+}
 
