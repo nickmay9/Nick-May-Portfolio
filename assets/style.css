@@ -9,90 +9,17 @@ body {
     background-color: lightsteelblue;
 }
 
-/*header section*/
-header {
-    background-color: lightslategray;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 10px 15px;
-}
-
-header h1{
-    color: black;
-    font-size: 36px;
-    font-weight: bold;
-}
-header a {
-    color: black;
-    text-decoration: none;
-}
-
-header nav {
-    margin: 5px;
-}
-
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
-
-header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-}
-
-header nav ul li a:hover {
-    background: white;
-    color: blue;
-    border-radius: 15px;
-    text-shadow: none;
-}
-/*end header*/
-
 /*Hero Section*/
 .hero {
-    background-image: url(./images/GPTempDownload.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/GPTempDownload.jpeg);
     background-size: cover;
     padding: 20%;
-    /*background-attachment: fixed;*/
     background-position: center;
-}
-
-.hero h1 {
-    font-size: 50px;
-    font-family: cursive;
-    font-weight: bolder;
-    text-shadow: 2px 2px black;
-    text-align: right;
-    color: black;
 }
 /*End Hero*/
 
 /*About Me*/
-#about-me {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
 
-.title {
-    width: 25%;
-    text-align: right;
-    font-size: 40px;
-    padding-right: 15px;
-    margin-right: 15px;
-    border-right: medium solid black;
-}
-
-.aboutMe-content {
-    width: 60%;
-}
 /*end about me*/
 
 /*Work Section*/

@@ -3,56 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Nick May's Portfolio</title>
 </head>
 <body>
     <!--Navigation-->
-    <header>
-        <h1><a href="./index.html">Nick May's Portfolio</a></h1>
-        <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-                <li><a href="./assets/images/Nick May Resume.pdf" target="_blank">Résumé</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="./assets/images/Nick May Resume.pdf" target="_blank">Résumé</a></li>
+        </ul>
+    </nav>
 
     <!--Hero Section-->
-    <section class="hero">
-        <h1>Welcome to my page!</h1>
+    <section class="hero text-light text-center">
+        <div class="row justify-content-end">
+            <h1 class="col-8 font-italic">Hello, I'm <span class="text-danger">Nick May</span></h1>
+        </div>
+        <div class="row justify-content-end">
+            <h2 class="col-8">I'm an Electrical and Software Engineer. Welcome to my Page!</h2>
+        </div>
     </section>
 
 
     <!--About Me-->
     <section id="about-me">
-        <div class="title">
-            <h2>About Me</h2>
+        <div class="row justify-content-center">
+            <div class="col-4 text-center">
+                <h2>About Me</h2>
+            </div>
         </div>
-        <div class="aboutMe-content">
-            <p>
-                I'm a graduate of the University of North Florida where I earned my Bachelor's in Electrical
-                Engineering and minor in Computer Science. While attending UNF, I was a member of D1 Men's Soccer 
-                Program. I played central midfield there and was a key part of the team that brought home the first 
-                conference title for the program and earned the program's first birth into the NCAA tournament.
-                <br><br>
-                After school I started my engineering career at Lockheed Martin. I spent 3 years there as a Systems 
-                Integration and Test Engineer mostly working the JASSM cruise missile program.  Most of my job there 
-                was spent developing the test stations and test software using C to test the hardware throughout the 
-                missile build process.
-                <br><br>
-                From Lockheed, I stayed in the Defense Industry but changed into a Sales Engineering role with 
-                <a href="https://www.aerogear.us/" target="_blank">AeroGear Telemetry</a>. At AeroGear I mostly worked 
-                with Telemetry Engineers but we represented companies that ranged from Telemetry, RF Solutions, Flight Termination
-                Systems, Data Acquisition Systems, and much more.
-                <br><br>
-                Outside of work, I love to live a very active lifestyle. I spent the majority of my life up until I was 23 playing
-                soccer competetively. Since then I've started to find other things I'm passionate about. I learned how to surf and  
-                fell in love with it and now travel the world to surf. I also found crossfit and I am now getting into doing
-                triathlon's. 
-            </p>
+        <div class="row">
+            <div class="col-4 card text-center">
+                <h5 class="card-header">School</h5>
+                <div class="card-body text-left">
+                    <p>
+                        I'm a graduate of the University of North Florida where I earned my Bachelor's in Electrical
+                        Engineering and minor in Computer Science. While attending UNF, I was a member of D1 Men's Soccer 
+                        Program. I played central midfield there and was a key part of the team that brought home the first 
+                        conference title for the program and earned the program's first birth into the NCAA tournament.
+                    </p>
+                </div>
+            </div>
+            <div class="col-4 card text-center">
+                <h5 class="card-header">Work</h5>
+                <div class="card-body text-left">
+                    <p>
+                        After school I started my engineering career at Lockheed Martin. I spent 3 years there as a Systems 
+                        Integration and Test Engineer mostly working the JASSM cruise missile program.  Most of my job there 
+                        was spent developing the test stations and test software using C to test the hardware throughout the 
+                        missile build process.
+                        From Lockheed, I stayed in the Defense Industry but changed into a RF Sales Engineering role with 
+                        <a href="https://www.aerogear.us/" target="_blank">AeroGear Telemetry</a>. At AeroGear I mostly worked 
+                        with Telemetry Engineers but we represented companies that ranged from Telemetry, RF Solutions, Flight Termination
+                        Systems, Data Acquisition Systems, and much more.
+                    </p>
+                </div>
+            </div>
+            <div class="col-4 card text-center">
+                <h5 class="card-header">Lifestyle</h5>
+                <div class="card-body text-left">
+                    <p>
+                        Outside of work, I love to live a very active lifestyle. I spent the majority of my life up until I was 23 playing
+                        soccer competetively. Since then I've started to find other things I'm passionate about. I learned how to surf and  
+                        fell in love with it and now travel the world to surf. I also found crossfit and I am now getting into doing
+                        triathlon's. 
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -115,5 +137,9 @@
         </div>
     </section>
 
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
