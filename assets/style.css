@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: lightsteelblue;
+    background-color: #F5F5F5;
 }
 
 /*Hero Section*/
@@ -16,6 +16,36 @@ body {
     padding: 20%;
     background-position: center;
 }
+.topnav {
+    border-bottom: 1px solid #43FFF4;
+}
+.topnav a {
+    color: white;
+}
+
+.topnav a:hover {
+    color: #43FFF4;
+}
+
+.bottomnav {
+    border-top: 1px solid #43FFF4;
+}
+
+.bottomnav a img {
+    background-color: white;
+    border-radius: 50%;
+}
+
+.bottomnav a img:hover {
+    background-color: #43FFF4;
+}
+
+.headerBorder {
+    border-bottom: 5px solid black;
+    width: 8%;
+}
+
+
 /*End Hero*/
 
 /*About Me*/

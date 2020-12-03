@@ -9,13 +9,13 @@
 </head>
 <body>
     <!--Navigation-->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-sm bg-dark fixed-top topnav">
         <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
-            <li class="nav-item"><a class="nav-link" href="./assets/images/Nick May Resume.pdf" target="_blank">Résumé</a></li>
+            <li><a class="nav-link" href="./index.html">Home</a></li>
+            <li><a class="nav-link" href="#about-me">About Me</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contact Me</a></li>
+            <li><a class="nav-link" href="./assets/images/Nick May Resume.pdf" target="_blank">Résumé</a></li>
         </ul>
     </nav>
 
@@ -32,10 +32,9 @@
 
     <!--About Me-->
     <section id="about-me">
-        <div class="row justify-content-center">
-            <div class="col-4 text-center">
+        <div class="row flex-column align-items-center p-5">
                 <h2>About Me</h2>
-            </div>
+                <div class="headerBorder"></div>
         </div>
         <div class="row justify-content-around">
             <div class="col-lg-4 card text-center">
@@ -81,13 +80,12 @@
     <!--Work-->
     <section id="projects">
 
-        <div class="row justify-content-center">
-            <div class="col-4 text-center">
-                <h2>Projects</h2>
-            </div>
+        <div class="row flex-column align-items-center p-5">
+            <h2>Projects</h2>
+            <div class="headerBorder"></div>
         </div>
-
-        <div class="row justify-content-around">
+        
+        <div class="row justify-content-center">
 
             <div class="col-3">
                 <div class="card">
@@ -104,10 +102,10 @@
             <div class="col-3">
                 <div class="card">
                     <!-- <a href="https://nickmay9.github.io/run-buddy/" target="_blank"> -->
-                    <img class="card-img-top" src="./assets/images/screencapture-nickmay9-github-io-Horiseon-Challenge1-2020-10-16-09_05_33.png" class="work-img" alt="Horiseon work example">
+                    <img class="card-img-top" src="./assets/images/project-4.jpeg" class="work-img" alt="Project 2">
                     <!-- </a> -->
                     <div class="card-body">
-                        <h3 class="card-title">Horiseon-Challenge1</h3>
+                        <h3 class="card-title">Project 2</h3>
                         <p class="card-text">some text</p>
                     </div>
                 </div>
@@ -126,7 +124,7 @@
             </div>
         </div>
 
-        <div class="row justify-content-around">
+        <div class="row justify-content-center">
             <div class="col-3">
                 <div class="card">
                     <!-- <a href="https://nickmay9.github.io/run-buddy/" target="_blank"> -->
@@ -167,12 +165,9 @@
 
     <!--Contact Info-->
     <section id="contact">
-
-        <div class="row justify-content-center">
-            <div class="col-4 text-center">
-                <h2>Contact Me</h2>
-                <p>Have a question or want to work together?</p>
-            </div>
+        <div class="row flex-column align-items-center p-5">
+            <h2>Contact Me</h2>
+            <div class="headerBorder"></div>
         </div>
 
         <div class="row justify-content-center">
@@ -188,7 +183,7 @@
     </section>
 
     <footer>
-        <nav class="navbar sticky-bottom bg-dark navbar-dark justify-content-center">
+        <nav class="navbar sticky-bottom bg-dark justify-content-center bottomnav">
             <a class="navbar-brand" href="https://www.linkedin.com/in/nickmay9/" target="_blank">
                 <img src="./assets/images/iconmonstr-linkedin-3.svg" width="40" height="40">
             </a>
