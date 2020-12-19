@@ -11,7 +11,7 @@ body {
 
 /*Hero Section*/
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/GPTempDownload.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/3PeaksHawaii.JPG);
     background-size: cover;
     padding: 20%;
     background-position: center;
