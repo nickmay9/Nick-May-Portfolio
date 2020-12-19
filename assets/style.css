@@ -72,15 +72,17 @@ body {
     opacity: 1;
 }
 
+#projects .middle button {
+    background-color: #43FFF4;
+    padding: 10px 24px;
+    border-radius: 8px;
+    border: 2px solid #43FFF4;
+    color: white;
+    font-weight: bolder;
+    transition-duration: 0.4s;
+}
 
-/*End Hero*/
-
-/*About Me*/
-
-/*end about me*/
-
-/*Work Section*/
-
-/*end work section*/
-
-/*Contact Section*/
+#projects .middle button:hover {
+    color: #43FFF4;
+    background-color: white;
+}

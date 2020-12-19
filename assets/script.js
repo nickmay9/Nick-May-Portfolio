@@ -13,28 +13,28 @@ var projectObjArr = [
         link: "https://nickmay9.github.io/weatherApp-challenge6/"
     },
     {
-        source: "./assets/images/projects/Image 10-23-20 at 10.24 AM.jpeg",
-        title: "Run Buddy",
-        code: "HTML/CSS",
-        link: ""
-    },
-    {
         source: "./assets/images/projects/project-3.jpeg",
-        title: "Project 4",
-        code: "HTML/CSS",
-        link: ""
+        title: "ReadMe Generator",
+        code: "NodeJS",
+        link: "https://github.com/nickmay9/proReadme-challenge9"
     },
     {
         source: "./assets/images/projects/project-4.jpeg",
-        title: "Project 5",
-        code: "HTML/CSS",
-        link: ""
+        title: "Portfolio Generator",
+        code: "NodeJS",
+        link: "https://github.com/nickmay9/portfolio-generator"
+    },
+    {
+        source: "./assets/images/projects/project-4.jpeg",
+        title: "Taskmaster Pro",
+        code: "HTML/CSS/Javascript",
+        link: "https://nickmay9.github.io/taskmaster-pro/"
     },
     {
         source: "./assets/images/projects/project-5.jpeg",
-        title: "Project 6",
-        code: "HTML/CSS",
-        link: ""
+        title: "Work Day Scheduler",
+        code: "HTML/CSS/Javascript",
+        link: "https://nickmay9.github.io/WorkDayScheduler-Challenge5/"
     }
 ];
 
@@ -63,8 +63,8 @@ for (var i = 0; i<projectObjArr.length; i++){
     codeUsed.textContent = projectObjArr[i].code;
 
     var buttonEl = document.createElement("button");
-    buttonEl.innerHTML = "<a href='" + projectObjArr[i].link + "' target='blank'>";
     buttonEl.textContent = "Learn More";
+    buttonEl.setAttribute("project", i);
 
 
     divTextEl.append(header, codeUsed, buttonEl);
@@ -73,4 +73,13 @@ for (var i = 0; i<projectObjArr.length; i++){
     divRowEl.appendChild(divColEl);
     projectContainer.appendChild(divRowEl);
 }
+
+var siteButtonHandler = event => {
+    var project = event.target.getAttribute("project");
+    if (project){
+        window.open(projectObjArr[project].link);
+    }
+}
+
+projectContainer.addEventListener("click", siteButtonHandler);
 
