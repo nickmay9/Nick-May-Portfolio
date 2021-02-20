@@ -1,6 +1,12 @@
 //object array to hold project info
 var projectObjArr = [
     {
+        source: "assets/images/projects/BootCamp-Project2.png",
+        title: "Travel Blog",
+        code: "Express/Node/Sequelize",
+        link: "https://travel-blog-project2.herokuapp.com/"
+    },
+    {
         source: "./assets/images/projects/Image 12-4-20 at 2.49 PM.jpeg",
         title: "Movie App",
         code: "HTML/CSS/UIKit/JavaScript/Youtube-API/OMDB-API",
@@ -29,12 +35,6 @@ var projectObjArr = [
         title: "Taskmaster Pro",
         code: "HTML/CSS/Javascript",
         link: "https://nickmay9.github.io/taskmaster-pro/"
-    },
-    {
-        source: "./assets/images/projects/project-5.jpeg",
-        title: "Work Day Scheduler",
-        code: "HTML/CSS/Javascript",
-        link: "https://nickmay9.github.io/WorkDayScheduler-Challenge5/"
     }
 ];
 
